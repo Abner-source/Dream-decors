@@ -401,3 +401,46 @@ html {scroll-behavior: smooth}
     font-size: 0.95rem;           /* adjust nav text */
   }
 }
+/* ===== Header: Responsive alignment ===== */
+@media (max-width: 720px) {
+  .header-inner {
+    flex-direction: column;          /* stack brand + nav */
+    align-items: flex-start;         /* align to left */
+    gap: 12px;                       /* space between brand and nav */
+    padding: 16px 4%;                /* some horizontal padding */
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand-logo {
+    height: 70px;                    /* increase logo size */
+    width: auto;
+  }
+
+  .brand-name {
+    font-size: 2.2rem;               /* larger brand name */
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;                 /* wrap if links overflow */
+    justify-content: flex-start;     /* left-align nav links */
+    gap: 12px;
+    width: 100%;
+  }
+
+  .nav a {
+    font-size: 0.95rem;
+  }
+
+  /* Ensure sections below start properly aligned */
+  .site > section,
+  .site > section.section-alt {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
