@@ -329,3 +329,38 @@ html {scroll-behavior: smooth}
     padding: 0 12px;             /* avoid text overflow on small screens */
   }
 }
+/* ===== Header Mobile Adjustments (larger logo & brand) ===== */
+@media (max-width: 720px) {
+  .header-inner {
+    flex-direction: column;      /* stack logo + nav vertically */
+    align-items: center;
+    gap: 16px;                   /* a bit more space between elements */
+  }
+
+  .brand {
+    gap: 12px;                   /* slightly larger gap between logo and name */
+  }
+
+  .brand-logo {
+    height: 60px;                /* increase logo size */
+  }
+
+  .brand-name {
+    font-size: 1.8rem;           /* increase brand name */
+    text-align: center;
+  }
+
+  .nav {
+    flex-wrap: wrap;              /* wrap links if they don't fit */
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 0.95rem;           /* slightly bigger nav text */
+  }
+
+  .hero-inner {
+    padding: 0 12px;             /* prevent hero text overflow */
+  }
+}
