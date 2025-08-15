@@ -412,7 +412,7 @@ html {scroll-behavior: smooth}
 
   .brand {
     display: flex;
-    align-items: center;
+    align-items: left;
     gap: 12px;
   }
 
