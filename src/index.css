@@ -294,3 +294,38 @@ html {scroll-behavior: smooth}
   .hero-ctas{flex-direction:column;gap:12px}
 }
 @media (max-width: 720px){ .footer-inner{flex-direction:column;text-align:center} }
+/* ===== Header Mobile Fix ===== */
+@media (max-width: 720px) {
+  .header-inner {
+    flex-direction: column;      /* stack logo and nav vertically */
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand {
+    gap: 8px;                    /* smaller gap for stacked layout */
+  }
+
+  .brand-logo {
+    height: 50px;                /* shrink logo for mobile */
+  }
+
+  .brand-name {
+    font-size: 1.5rem;           /* smaller brand name */
+    text-align: center;
+  }
+
+  .nav {
+    flex-wrap: wrap;              /* wrap links to next line if needed */
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 0.9rem;           /* slightly smaller nav text */
+  }
+
+  .hero-inner {
+    padding: 0 12px;             /* avoid text overflow on small screens */
+  }
+}
