@@ -982,3 +982,14 @@ body {
     padding: 0 1rem;
   }
 }
+/* ===== Hero Section Image Brightness ===== */
+.hero {
+  position: relative;
+  background: url("your-image.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  filter: brightness(1.15); /* increase value >1 to make brighter */
+}
